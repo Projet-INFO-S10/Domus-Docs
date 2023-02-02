@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+  domus-openhab:
+    image: openhab/openhab:3.4.1 # Last stable version of openhab available on docker hub
+    restart: always # Restart the container if it crashes
+    ports:
+      - 8080:8080 # Openhab web interface
+      - 8443:8443 # Openhab web interface with TLS
+      - 8883:8883 # MQTT port with TLS
+      - 1883:1883 # MQTT port
+    volumes:  # Mount the configuration files
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./openhab_addons:/openhab/addons
+      - ./openhab_conf:/openhab/conf
+      - ./openhab_userdata:/openhab/userdata
+    environment:  # Set the environment variables
+      CRYPTO_POLICY: "unlimited"
+      EXTRA_JAVA_OPTS: "-Duser.timezone=Europe/Berlin"
+      OPENHAB_HTTP_PORT: "8080"
+      OPENHAB_HTTPS_PORT: "8443"
