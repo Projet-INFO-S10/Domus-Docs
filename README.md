@@ -2,7 +2,7 @@
 
 Le but de ce tutoriel est l'installation d'une extension pour permettre à un serveur OpenHab de récuperer les informations remontés par un objet via un réseau LoRaWAN. Dans notre cas, l'objet sera un capteur d'ouverture ou fermeture de porte.
 
-Un docker-compose file est disponible dans le [repository](https://github.com/glavirotte/Domus) et permet l'installation d'une instance de serveur OpenHab. Pour l'utiliser, il faut d'avoir installé sur sa machine, docker et docker-compose.
+Un docker-compose file est disponible dans le [repository](https://github.com/Projet-INFO-S10/Domus-Docs) et permet l'installation d'une instance de serveur OpenHab. Pour l'utiliser, il faut d'avoir installé sur sa machine, docker et docker-compose.
 Après avoir cloné le repository, il suffit d'exécuter la commande:
 
     docker-compose up -d
