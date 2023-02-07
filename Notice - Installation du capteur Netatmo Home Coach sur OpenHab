@@ -1,12 +1,13 @@
 ## Notice d'installation Netatmo Home Coach sur OpenHab 
 
 # 1. Installer l'application 
-Installer l'application Netatmo sur smartphone : 
+Installer l'application Netatmo Home Coach sur smartphone : 
 - Sur android suivre le lien suivant : https://play.google.com/store/apps/details?id=com.netatmo.homecoach&hl=fr&gl=US&pli=1
 - Sur apple : https://apps.apple.com/fr/app/healthy-home-coach/id1131510218
 Puis suivre les instructions d'installation
 
-## 2. Installer le Binding Netatmo
+## 2. Installer le Binding Netatmo sur OpenHab
+- Ouvrir OpenHab
 - Cliquer sur "Paramètres" 
 - Dans la catégorie "Add-ons", cliquer sur "Bindings" 
 - Dans la liste "openHab Distributions", chercher "Netatmo Biding" (dans l'ordre alphabétique, donc chercher dans les bindings supplémentaires)
@@ -19,7 +20,7 @@ Puis suivre les instructions d'installation
 - Compléter les informations demandées
 
 ## 4. Connection avec le compte Netatmo
-
+- Retourner sur OpenHab
 - Dans "Paramètres", cliquer sur "Things"
 - Cliquer sur le bouton bleu "+"
 - Choisir "Extension Netatmo"
@@ -32,7 +33,14 @@ localhost:8080/netatmo/connect/<_CLIENT_ID_>
 - Cliquer sur `Authorize Thing` et suivre les instructions.
 - Vérifier que le statut sur OpenHab est bien `Online`
 
-## 5. Connection avec l'appareil
+## . Récupérer l'adresse mac 
+Retourner sur l'application mobile Home Coach
+- Afficher le menu à gauche
+- Cliquer sur paramétres avancés
+- Cliquer sur l'appareil concerné
+- Dans la partie information récupérer l'adresse MAC puis la recopier sur OpenHab dans 'ID de l'équipement'
+
+## . Connection avec l'appareil
 
 - Dans "Paramètres", cliquer sur "Things"
 - Cliquer sur le bouton bleu "+"
@@ -40,17 +48,10 @@ localhost:8080/netatmo/connect/<_CLIENT_ID_>
 - Choisir 'Capteur Qaulité Air Intérieur' ( netatmo:home-coach)
 - Dans Bridge choisir 'Compte Netatmo'
 - Dans ID de l'équipement mettre l'adresse MAC de l'équipement
-
-### 6. Récupérer l'adresse mac
-Retourner sur l'application mobile Home Coach
-- Afficher le menu à gauche
-- Cliquer sur paramétres avancés
-- Cliquer sur l'appareil concerné
-- Dans la partie information récupérer l'adresse MAC puis la recopier sur OpenHab dans 'ID de l'équipement'
 - Puis cliquer sur create Thing
 
 ## 7. Ajouter des channels
-- Dans paramétres -> Things cliquer sur Channels
+- Dans paramétres -> Things cliquer sur 'Capteur Qualité Air Intérieur' sur Channels
 - L'ensemble des informations du capteur s'affichent.
 - Cliquer sur l'information qui vous intéresse
 - Cliquer sur `Add link to Item`
