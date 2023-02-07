@@ -1,7 +1,8 @@
-# Notice d'installation Netatmo Home Coach sur OpenHab 
+## Notice d'installation Netatmo Home Coach sur OpenHab 
 ----------
-### Informations disponibles :
-- *Fréquence d’enregistrement:* toutes les 5 minutes
+**Informations disponibles :**
+
+- Fréquence d’enregistrement: toutes les 5 minutes
 
 - **Température** :
 Plage de mesure : 0°C à 50°C
@@ -24,7 +25,7 @@ Plage de mesure : 35 dB à 120 dB
 Installer l'application Netatmo Home Coach sur smartphone : 
 - Sur android suivre le lien suivant : https://play.google.com/store/apps/details?id=com.netatmo.homecoach&hl=fr&gl=US&pli=1
 - Sur apple : https://apps.apple.com/fr/app/healthy-home-coach/id1131510218
-Puis suivre les instructions d'installation
+Puis suivre les instructions d'installation permettant de mettre en route le capteur.
 
 ## 2. Installer le Binding Netatmo sur OpenHab
 - Ouvrir OpenHab
@@ -49,19 +50,20 @@ Puis suivre les instructions d'installation
 - Cliquer sur `Create Thing`
 - Le pont va se déconnecter / CONFIGURATION_ERROR - c’est normal
 - Accéder au lien suivant pour autoriser la connection avec Netatmo connect
-localhost:8080/netatmo/connect/<_CLIENT_ID_>
+http://localhost:8080/netatmo/connect/<_CLIENT_ID_>
+
 - Cliquer sur `Authorize Thing` et suivre les instructions.
 - Vérifier que le statut sur OpenHab est bien `Online`
 
-## . Récupérer l'adresse mac 
+## 5. Récupérer l'adresse mac 
 Retourner sur l'application mobile Home Coach
 - Afficher le menu à gauche
 - Cliquer sur paramétres avancés
 - Cliquer sur l'appareil concerné
 - Dans la partie information récupérer l'adresse MAC puis la recopier sur OpenHab dans 'ID de l'équipement'
 
-## . Connection avec l'appareil
-
+## 6. Connection avec l'appareil
+- Retourner dans OpenHab
 - Dans "Paramètres", cliquer sur "Things"
 - Cliquer sur le bouton bleu "+"
 - Choisir "Extension Netatmo"
