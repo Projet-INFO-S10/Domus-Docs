@@ -1,4 +1,24 @@
 ## Notice d'installation Netatmo Home Coach sur OpenHab 
+----------
+Informations disponibles :
+- Fréquence d’enregistrement: toutes les 5 minutes
+
+-Température :
+Plage de mesure : 0°C à 50°C
+Précision : ± 0,3°C
+
+- Humidité :
+Plage de mesure : 0 à 100%
+Précision : ± 3%
+
+- Capteur de CO2 :
+Plage de mesure : 0 à 5 000 ppm
+Précision : ± 50 ppm (de 0 à 1 000 ppm) ou ± 5 % (de 1 000 à 5 000 ppm)
+
+- Sonomètre :
+Plage de mesure : 35 dB à 120 dB
+
+------------
 
 # 1. Installer l'application 
 Installer l'application Netatmo Home Coach sur smartphone : 
