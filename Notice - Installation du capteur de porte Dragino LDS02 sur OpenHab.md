@@ -1,4 +1,4 @@
-# Tutoriel d'installation de l'extension MQTT Bindings pour OpenHab
+# Tutoriel d'installation du capteur de porte Dragino LDS02 sur OpenHab
 
 Le but de ce tutoriel est l'installation d'une extension pour permettre à un serveur OpenHab de récuperer les informations remontés par un objet via un réseau LoRaWAN. Dans notre cas, l'objet sera un capteur d'ouverture ou fermeture de porte.
 
