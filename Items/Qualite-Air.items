@@ -1,0 +1,28 @@
+DateTime Capteur_Qualite_Air_Interieur_Horodatage_Mesures "Horodatage Mesures Capteur" <Time> [ "Point" ] {
+    channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:timestamp#measures"
+}
+
+Location Capteur_Qualite_Air_Interieur_Emplacement "Emplacement Capteur Air" [ "Point" ] {
+    channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:location#value"
+}
+
+Number:Dimensionless Capteur_Qualite_Air_Interieur_Bruit "Bruit Air" <SoundVolume> [ "Measurement", "Noise" ] {
+    channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:noise#value"
+}
+
+Number:Dimensionless Capteur_Qualite_Air_Interieur_CO2 "CO2 Air" <Carbondioxide> [ "CO2", "Measurement" ] {
+    channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:airquality#co2"
+}
+
+Number:Dimensionless Capteur_Qualite_Air_Interieur_Humidite_Atmospherique "Humidité Atmosphérique Air" <Humidity> [ "Humidity", "Measurement" ] {
+    channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:humidity#value"
+}
+
+Number:Pressure Capteur_Qualite_Air_Interieur_Pression_Barometrique "Pression Barométrique Air" <Pressure> [ "Measurement", "Pressure" ] {
+    channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:pressure#value"
+}
+
+Number:Temperature Capteur_Qualite_Air_Interieur_Temperature_Interieure "Température Intérieure Air" <Temperature> [ "Measurement", "Temperature" ] {
+    channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:temperature#value"
+}
+
