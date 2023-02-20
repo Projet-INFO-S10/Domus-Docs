@@ -1,0 +1,30 @@
+Bridge mqtt:broker:95779ec981 "CampusIoT" @ "Imag" [
+  birthRetain=true,
+  certificatepin=false,
+  clientid="0f01f757-1681-4a52-88dd-c7e5e619912d",
+  enableDiscovery=true,
+  host="******************",
+  hostnameValidated=true,
+  keepAlive=60,
+  lwtQos=0,
+  lwtRetain=true,
+  mqttVersion="V3",
+  password="*****************",
+  port=8883,
+  protocol="TCP",
+  publickeypin=false,
+  qos=0,
+  reconnectTime=60000,
+  secure=true,
+  shutdownRetain=false,
+  username="org-46"
+] {
+  Thing topic 3fd8855e5a "LDS02" @ "MaCI" {
+    Channels:
+      State String : 123 "DRAGINO_LDS02" [ stateTopic="application/243/device/+/rx" ]
+      State Number : 2 "DRAGINO_OPEN_TIME" [ stateTopic="application/243/device/+/rx" ]
+      State String : 3 "DOOR_OPEN_TIME" [ stateTopic="application/243/device/+/rx" ]
+      State String : 4 "DOOR_BATTERY" [ stateTopic="application/243/device/+/rx" ]
+      State String : 5 "LAST_MOVEMENT" [ stateTopic="application/243/device/+/rx" ]
+  }
+}

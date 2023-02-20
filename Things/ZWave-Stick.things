@@ -1,0 +1,15 @@
+Bridge zwave:serial_zstick:67bb3162bd "Z-Wave Serial Controller" [
+  controller_exclude=false,
+  controller_hardreset=false,
+  controller_inclusiontimeout=30,
+  controller_master=true,
+  controller_maxawakeperiod=10,
+  controller_softreset=false,
+  controller_sync=false,
+  controller_wakeupperiod=3600,
+  heal_time=2,
+  inclusion_mode=2,
+  port="/dev/ttyACM0",
+  security_inclusionmode=0,
+  security_networkkey="D5 8D 8B 3D D0 83 ED 1E B0 0B D1 1A 73 6F 79 51"
+]

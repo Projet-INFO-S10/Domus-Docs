@@ -1,0 +1,11 @@
+Switch ZWave_Node_006_ZW130_WallMote_Quad_Low_battery_alarm "Low battery alarm" <LowBattery> ["Point"] { channel="zwave:device:3aed7e3fe2:node6:alarm_battery" }
+Switch ZWave_Node_006_ZW130_WallMote_Quad_Button_Number_1 "Button Number 1" <Switch> ["Point"] { channel="zwave:device:3aed7e3fe2:node6:basic_switch_binary1" }
+Switch ZWave_Node_006_ZW130_WallMote_Quad_Button_Number_2 "Button Number 2" <Switch> ["Point"] { channel="zwave:device:3aed7e3fe2:node6:basic_switch_binary2" }
+Switch ZWave_Node_006_ZW130_WallMote_Quad_Button_Number_3 "Button Number 3" <Switch> ["Point"] { channel="zwave:device:3aed7e3fe2:node6:basic_switch_binary3" }
+Switch ZWave_Node_006_ZW130_WallMote_Quad_Button_Number_4 "Button Number 4" <Switch> ["Point"] { channel="zwave:device:3aed7e3fe2:node6:basic_switch_binary4" }
+Number ZWave_Node_006_ZW130_WallMote_Quad_Niveau_Batterie "Niveau Batterie" <Battery> ["Energy", "Measurement"] { channel="zwave:device:3aed7e3fe2:node6:battery-level" }
+Number ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number "Scene Number" ["Point"] { channel="zwave:device:3aed7e3fe2:node6:scene_number" }
+Number ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number_1 "Scene Number 1" ["Point"] { channel="zwave:device:3aed7e3fe2:node6:scene_number1" }
+Number ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number_2 "Scene Number 2" ["Point"] { channel="zwave:device:3aed7e3fe2:node6:scene_number2" }
+Number ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number_3 "Scene Number 3" ["Point"] { channel="zwave:device:3aed7e3fe2:node6:scene_number3" }
+Number ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number_4 "Scene Number 4" ["Point"] { channel="zwave:device:3aed7e3fe2:node6:scene_number4" }
