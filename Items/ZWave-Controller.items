@@ -1,8 +1,0 @@
-Group ZWave_Serial_Controlle "Z-Wave Serial Controller" ["Equipment"]
-Group ZWave_Serial_Controller "Z-Wave Serial Controller" ["Equipment"]
-Number ZWave_Serial_Controller_Frames_Acknowledged "Frames Acknowledged" ["Point"] { channel="zwave:serial_zstick:3aed7e3fe2:serial_ack" }
-Number ZWave_Serial_Controller_Frames_Cancelled "Frames Cancelled" ["Point"] { channel="zwave:serial_zstick:3aed7e3fe2:serial_can" }
-Number ZWave_Serial_Controller_Received_Checksum_Errors "Received Checksum Errors" ["Point"] { channel="zwave:serial_zstick:3aed7e3fe2:serial_cse" }
-Number ZWave_Serial_Controller_Frames_Rejected "Frames Rejected" ["Point"] { channel="zwave:serial_zstick:3aed7e3fe2:serial_nak" }
-Number ZWave_Serial_Controller_OOF_Bytes_Received "OOF Bytes Received" ["Point"] { channel="zwave:serial_zstick:3aed7e3fe2:serial_oof" }
-Number ZWave_Serial_Controller_Start_Frames "Start Frames" ["Point"] { channel="zwave:serial_zstick:3aed7e3fe2:serial_sof" }
