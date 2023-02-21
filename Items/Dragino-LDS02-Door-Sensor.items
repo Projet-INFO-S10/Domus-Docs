@@ -1,6 +1,34 @@
-String                      DRAGINO_LAST_OPEN_TIME    "Dernier temps d'ouverture"       <door>
-String                      Door                      "Etat d'ouverture de la porte"    <door>            ["Door"]    {channel="mqtt:topic:95779ec981:3fd8855e5a:123", stateDescription=""[options="1 = OPEN,0 = CLOSED"]}
-String                      Door_open_number          "Nombre d'ouvertures"             <door>                        {channel="mqtt:topic:95779ec981:3fd8855e5a:3"}
-Number:ElectricPotential    door_sensor_battery       "Etat de la batterie"             <batterylevel>                {channel="mqtt:topic:95779ec981:3fd8855e5a:4"}
-DateTime                    LAST_MOVE                 "Date du dernier mouvement"       <time>                        {channel="mqtt:topic:95779ec981:3fd8855e5a:5"}
+/*
+Capteur de porte LoraWan - Dragino LDS02
+*/
 
+DateTime LAST_MOVE "Date du dernier mouvement" <time> {
+    channel="mqtt:topic:95779ec981:3fd8855e5a:5" [
+      function="$.rxInfo[0].time",
+      profile="transform:JSONPATH"
+    ]
+}
+
+String Door "Etat d'ouverture de la porte" <door> [ "Door" ] {
+    channel="mqtt:topic:95779ec981:3fd8855e5a:123" [
+      function="$.object.DOOR_OPEN_STATUS",
+      profile="transform:JSONPATH"
+    ],
+    stateDescription=" " [
+      options="1 = OPEN,0 = CLOSED"
+    ]
+}
+
+String Door_open_number "Nombre d'ouvertures" <door> {
+    channel="mqtt:topic:95779ec981:3fd8855e5a:3" [
+      function="$.object.DOOR_OPEN_TIMES",
+      profile="transform:JSONPATH"
+    ]
+}
+
+Number:ElectricPotential door_sensor_battery "Etat de la batterie" <batterylevel> {
+    channel="mqtt:topic:95779ec981:3fd8855e5a:4" [
+      function="$.object.BAT_V",
+      profile="transform:JSONPATH"
+    ]
+}

@@ -1,3 +1,6 @@
+/*
+Capteur de qualité de l'air - Netatmo Home Coach
+*/
 DateTime Capteur_Qualite_Air_Interieur_Horodatage_Mesures "Horodatage Mesures Capteur" <Time> [ "Point" ] {
     channel="netatmo:home-coach:3df9977bf0:4f47c5c3b2:timestamp#measures"
 }

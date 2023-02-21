@@ -99,3 +99,5 @@ Répéter l'opération pour chaque channel.
 
 
 
+## Sources
+- https://www.openhab.org/addons/bindings/zwave/

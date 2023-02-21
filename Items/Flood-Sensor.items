@@ -1,4 +1,0 @@
-Switch ZWave_flood_Flood_Alarm "Flood Alarm" <Water> ["Point"] { channel="zwave:device:3aed7e3fe2:node3:alarm_flood" }
-Switch ZWave_flood_Tamper_Alarm "Tamper Alarm" ["Point"] { channel="zwave:device:3aed7e3fe2:node3:alarm_tamper" }
-Number ZWave_flood_Niveau_Batterie "Niveau Batterie" <Battery> ["Energy", "Measurement"] { channel="zwave:device:3aed7e3fe2:node3:battery-level" }
-Number:Temperature ZWave_flood_Temperature_Sensor "Temperature Sensor" <Temperature> ["Point"] { channel="zwave:device:3aed7e3fe2:node3:sensor_temperature" }
