@@ -17,7 +17,7 @@ Bridge mqtt:broker:95779ec981 "CampusIoT" @ "Imag" [
   reconnectTime=60000,
   secure=true,
   shutdownRetain=false,
-  username="org-46"
+  username="*****************"
 ] {
   Thing topic 3fd8855e5a "LDS02" @ "MaCI" {
     Channels:
