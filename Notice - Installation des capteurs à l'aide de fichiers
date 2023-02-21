@@ -48,3 +48,8 @@ Pour le fichier *Door.things*, il est nécessaire de rajouter le mot de passe et
 - Pour les fichiers items: **$OPENHAB_CONF/items**
 
 Une fois cela fait, ils seront automatiquements ajoutés à OpenHab et utilisables.
+
+
+## Sources :
+- https://www.openhab.org/docs/configuration/things.html
+- https://www.openhab.org/docs/configuration/items.html
