@@ -1,8 +1,0 @@
-Switch ZWave_Node_004_FGMS001_Motion_Sensor_Alarm_general "Alarm (general)" <Alarm> ["Point"] { channel="zwave:device:3aed7e3fe2:node4:alarm_general", stateDescription=""[] }
-Switch ZWave_Node_004_FGMS001_Motion_Sensor_Motion_Alarm "Motion Alarm" <Motion> ["Point"] { channel="zwave:device:3aed7e3fe2:node4:alarm_motion" }
-Switch ZWave_Node_004_FGMS001_Motion_Sensor_Tamper_Alarm "Tamper Alarm" ["Point"] { channel="zwave:device:3aed7e3fe2:node4:alarm_tamper" }
-Number ZWave_Node_004_FGMS001_Motion_Sensor_Niveau_Batterie "Niveau Batterie" <Battery> ["Energy", "Measurement"] { channel="zwave:device:3aed7e3fe2:node4:battery-level" }
-Switch ZWave_Node_004_FGMS001_Motion_Sensor_Binary_Sensor "Binary Sensor" ["Point"] { channel="zwave:device:3aed7e3fe2:node4:sensor_binary" }
-Number ZWave_Node_004_FGMS001_Motion_Sensor_Sensor_luminance "Sensor (luminance)" ["Point"] { channel="zwave:device:3aed7e3fe2:node4:sensor_luminance" }
-Number ZWave_Node_004_FGMS001_Motion_Sensor_Sensor_seismic_intensity "Sensor (seismic intensity)" ["Point"] { channel="zwave:device:3aed7e3fe2:node4:sensor_seismicintensity" }
-Number:Temperature ZWave_Node_004_FGMS001_Motion_Sensor_Sensor_temperature "Sensor (temperature)" <Temperature> ["Point"] { channel="zwave:device:3aed7e3fe2:node4:sensor_temperature" }

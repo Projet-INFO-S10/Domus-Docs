@@ -1,8 +1,0 @@
-Switch ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_Alarm_power "Alarm (power)" <Energy> ["Point"] { channel="zwave:device:3aed7e3fe2:node5:alarm_power" }
-Number ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_LED_ring_colour_when_device_is_on "LED ring colour when device is on" ["Point"] { channel="zwave:device:3aed7e3fe2:node5:config_decimal_param41" }
-Number ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_LED_ring_colour_when_device_is_off "LED ring colour when device is off" ["Point"] { channel="zwave:device:3aed7e3fe2:node5:config_decimal_param42" }
-Number ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_Electric_meter_kWh "Electric meter (kWh)" <Energy> ["Point"] { channel="zwave:device:3aed7e3fe2:node5:meter_kwh" }
-Switch ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_Reset_the_total_power_consumption "Reset the total power consumption" <Energy> ["Point"] { channel="zwave:device:3aed7e3fe2:node5:meter_reset" }
-Number ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_Electric_meter_watts "Electric meter (watts)" <Energy> ["Point"] { channel="zwave:device:3aed7e3fe2:node5:meter_watts" }
-Number ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_Sensor_power "Sensor (power)" <Energy> ["Point"] { channel="zwave:device:3aed7e3fe2:node5:sensor_power" }
-Switch ZWave_Node_005_FGWP102_Metered_Wall_Plug_Switch_Switch "Switch" <Switch> ["Point"] { channel="zwave:device:3aed7e3fe2:node5:switch_binary" }
