@@ -8,7 +8,7 @@ if [ -x "$(command -v docker)" ]; then  # Check if docker is installed
         echo "Setting up openhab into a docker container..."
         docker-compose up -d # Start the docker container
     else
-        echo "git clone failed"
+        echo "git clone failed ! Please check that you have the right to clone the repository"
     fi
 else
     echo "Please Install docker and docker-compose"
