@@ -4,7 +4,7 @@ Tout d'abord, cette installation a été réalisée sur un serveur openHAB natif
 
 ## Installation par reconnaissance des outils
 
-Tout d'abord, il faut que l'ampoule soit en activité avec une lampe afin qu'elle fonctionne. Le Bluetooth doit également être activité sur l'ordinateur hébergeant le serveur openHAB, afin de pouvoir faire la liaison entre les deux.
+Tout d'abord, il faut que l'ampoule soit allumée. Le Bluetooth doit également être activité sur l'ordinateur hébergeant le serveur openHAB, afin de pouvoir faire la liaison entre les deux.
 
 Il est nécessaire d'activer le Bluetooth, et de sélectionner l'appairage avec *Pulse Solo C01-A66*, l'ampoule que nous souhaitons connecté dans notre cas.
 Lorsque la connexion s'effectue, un bruit doit émaner de la lampe, signifiant que la liaison est active.
