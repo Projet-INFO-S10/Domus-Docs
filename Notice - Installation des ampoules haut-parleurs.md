@@ -24,9 +24,16 @@ Pour d'autres installations, le bridge à utiliser sera plutôt le [BlueGiga Ada
 Il faut aller dans *Paramètres*, puis *Things*.
 Si tout fonctionne bien, le serveur openHAB est censé reconnaître la connexion Bluetooth de l'ordinateur, et un nouvel élément devrait arriver dans la boîte *Inbox*, en rouge en bas de la page. openHAB devrait proposer une Bluetooth Interface, que l'on peut ajouter en faisant *Add as a Thing*.
 
+**NB**: Si le bridge n'est pas directement reconnu, alors il faut aller dans *things*, puis le *+* en bas à droite, *bluetooth binding* et enfin *scan* en haut de la page.
+Normalement OpenHab devrait découvrir une thing bluetooth.
+
 ### 3. Reconnaissance de l'ampoule
 
-Peu après la reconnaissance du bridge, en retournant sur la page *Things*, openHAB devrait proposer l'ajout des différents éléments auquel l'ordinateur peut se connecter, via Bluetooth. 
+Peu après la reconnaissance du bridge, en retournant sur la page *Things*, openHAB devrait proposer, dans *InBox* l'ajout des différents éléments auquel l'ordinateur peut se connecter, via Bluetooth. 
+
+**NB**: Si l'objet n'est pas directement reconnu, alors il faut aller dans *things*, puis le *+* en bas à droite, *bluetooth binding* et enfin *scan* en haut de la page.
+Normalement OpenHab devrait découvrir le *C01-A66_Pulse Solo*.
+
 Il faut alors sélectionner l'ampoule *C01-A66_Pulse Solo*, et faire *Add as a Thing* pour l'ajouter au serveur.
 
 Lorsque ceci est fait, en retournant dans *Things*, il est possible en sélectionnant notre objet ampoule d'aller ajouter une *Channel* (en haut de la page) qui permet de mesurer la force du signal reçu : En cliquant sur RSSI puis sur *Add Link to Item...*, puis en sélectionnant *Create a new Item*, et enfin en validant avec le bouton *Link* bleu, en bas de page.
