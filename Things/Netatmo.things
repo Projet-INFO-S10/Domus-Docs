@@ -1,6 +1,6 @@
 Bridge netatmo:account:3df9977bf0 "Compte Netatmo" [
-  clientId="63e21be9f16c9beb170fece2",
-  clientSecret="sXgI9FDG77wmZUcRj45sKrbOuC5TGB0B8",
+  clientId="**********************",
+  clientSecret="**********************",
   reconnectInterval=300,
   refreshToken="63e217938057ecc97c031957|896f70cadf0ec66d40854fa3b38d8df1"
 ] {

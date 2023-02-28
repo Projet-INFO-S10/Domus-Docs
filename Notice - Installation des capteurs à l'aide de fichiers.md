@@ -48,3 +48,5 @@ Pour le fichier *Door.things*, il est nécessaire de rajouter le mot de passe et
 - Pour les fichiers items: **$OPENHAB_CONF/items**
 
 Une fois cela fait, ils seront automatiquements ajoutés à OpenHab et utilisables.
+
+⚠️ Dans les fichiers .things, les étoiles sont à compléter avec vos valeurs ( par exemple pour le compte netatmo les valeurs de client ID et client secret associées à votre compte).
