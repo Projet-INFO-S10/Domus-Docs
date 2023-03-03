@@ -1,0 +1,1 @@
+rm -rf Merros/ client_certs/* broker_certs/*    # Remove files and directories

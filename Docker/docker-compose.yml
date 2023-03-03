@@ -25,5 +25,6 @@ services:
       - ./broker_config/:/mosquitto/config/
       - ./broker_certs/:/etc/mosquitto/certs/
       - ./password_file:/etc/mosquitto/passwd
+    restart: unless-stopped
     ports:
       - 8884:8883
