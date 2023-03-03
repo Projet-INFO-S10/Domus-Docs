@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IP="127.0.0.1"
+IP="172.25.0.2"
 SUBJECT_CA="/C=FR/ST=Grenoble/L=Grenoble/O=himinds/OU=CA/CN=$IP"
 SUBJECT_SERVER="/C=FR/ST=Grenoble/L=Grenoble/O=himinds/OU=Server/CN=$IP"
 SUBJECT_CLIENT="/C=FR/ST=Grenoble/L=Grenoble/O=himinds/OU=Client/CN=$IP"
@@ -34,5 +34,5 @@ function move_files () {
 
 generate_CA
 generate_server
-move_files
 # generate_client
+move_files
