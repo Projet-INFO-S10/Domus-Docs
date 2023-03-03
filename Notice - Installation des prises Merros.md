@@ -12,7 +12,7 @@ Dans le [repository](https://github.com/Projet-INFO-S10/Domus-docs/tree/main/Doc
 
 Pour lancer les tout le nécessaire, cela se fait avec la commande suivante:
 
-    ./dockerize.sh
+    ./meross.sh
 
 Suivre les infos du script.
 
