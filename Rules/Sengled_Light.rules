@@ -1,0 +1,13 @@
+rule "SENGLED_LIGHT"
+when
+	Item Sengled_Switch changed	
+then
+	switch (Sengled_Switch.state) {
+		case OFF: {
+			logInfo("Sengled_Switch", "Light goes off")
+			executeCommandLine("./Scripts/pulse.sh", "off", "AC:9A:22:72:1A:D4") }
+		case ON: {
+			logInfo("Sengled_Switch", "Light goes on")
+			executeCommandLine("./Scripts/pulse.sh", "on", "AC:9A:22:72:1A:D4") }
+	}
+end
