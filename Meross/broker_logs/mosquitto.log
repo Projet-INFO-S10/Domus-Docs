@@ -1,0 +1,45 @@
+
+2023-03-03T21:09:36: Config loaded from /mosquitto/config/mosquitto.conf.
+2023-03-03T21:09:36: Opening ipv4 listen socket on port 8883.
+2023-03-03T21:09:36: Opening ipv6 listen socket on port 8883.
+2023-03-03T21:10:28: mosquitto version 1.6.10 terminating
+2023-03-03T21:20:02: mosquitto version 1.6.10 starting
+2023-03-03T21:20:02: Config loaded from /mosquitto/config/mosquitto.conf.
+2023-03-03T21:20:02: Opening ipv4 listen socket on port 8883.
+2023-03-03T21:20:02: Opening ipv6 listen socket on port 8883.
+2023-03-03T21:20:07: New connection from 192.168.0.12 on port 8883.
+2023-03-03T21:20:08: New client connected from 192.168.0.12 as fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (p1, c1, k120, u'48:e1:e9:aa:c8:d1').
+2023-03-03T21:20:08: No will message specified.
+2023-03-03T21:20:08: Sending CONNACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (0, 0)
+2023-03-03T21:20:08: Received SUBSCRIBE from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q
+2023-03-03T21:20:08: 	/appliance/2210120813369351200148e1e9aac8d1/subscribe (QoS 1)
+2023-03-03T21:20:08: fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q 1 /appliance/2210120813369351200148e1e9aac8d1/subscribe
+2023-03-03T21:20:08: Sending SUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q
+2023-03-03T21:20:08: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m3, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (389 bytes))
+2023-03-03T21:20:08: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m3, rc0)
+2023-03-03T21:20:08: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m4, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (763 bytes))
+2023-03-03T21:20:08: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m4, rc0)
+2023-03-03T21:20:13: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m5, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (763 bytes))
+2023-03-03T21:20:13: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m5, rc0)
+2023-03-03T21:20:18: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m6, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (763 bytes))
+2023-03-03T21:20:18: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m6, rc0)
+2023-03-03T21:20:23: Received DISCONNECT from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q
+2023-03-03T21:20:23: Client fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q disconnected.
+2023-03-03T21:20:26: New connection from 192.168.0.12 on port 8883.
+2023-03-03T21:20:26: New client connected from 192.168.0.12 as fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (p1, c1, k120, u'48:e1:e9:aa:c8:d1').
+2023-03-03T21:20:26: No will message specified.
+2023-03-03T21:20:26: Sending CONNACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (0, 0)
+2023-03-03T21:20:26: Received SUBSCRIBE from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q
+2023-03-03T21:20:26: 	/appliance/2210120813369351200148e1e9aac8d1/subscribe (QoS 1)
+2023-03-03T21:20:26: fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q 1 /appliance/2210120813369351200148e1e9aac8d1/subscribe
+2023-03-03T21:20:26: Sending SUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q
+2023-03-03T21:20:26: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m3, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (389 bytes))
+2023-03-03T21:20:26: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m3, rc0)
+2023-03-03T21:20:26: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m4, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (763 bytes))
+2023-03-03T21:20:26: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m4, rc0)
+2023-03-03T21:20:31: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m5, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (763 bytes))
+2023-03-03T21:20:31: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m5, rc0)
+2023-03-03T21:20:36: Received PUBLISH from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (d0, q1, r0, m6, '/appliance/2210120813369351200148e1e9aac8d1/publish', ... (763 bytes))
+2023-03-03T21:20:36: Sending PUBACK to fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q (m6, rc0)
+2023-03-03T21:20:42: Received DISCONNECT from fmware:2210120813369351200148e1e9aac8d1_Ely5A4sgr4UG5t8q
+2023-03-07T13:43:26: Client fmware:2210122567367951200148e1e9aad6d5_wgBhixQXYagRlaNR already connected, closing old connection.
