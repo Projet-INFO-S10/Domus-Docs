@@ -1,0 +1,6 @@
+Dimmer Sengled_Luminosity "Sengled Luminosité" <lightbulb>
+
+Rollershutter Sengled_sound "Sengled musique" <soundvolume>
+
+Switch Sengled_bulb "Sengled Switch" <light>
+
