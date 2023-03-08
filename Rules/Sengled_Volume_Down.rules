@@ -1,0 +1,7 @@
+rule "SENGLED_VOLUME_DOWN"
+when
+	Item Sengled_Volume_Down changed	
+then
+	logInfo("Sengled_Volume_Down", "Sound goes down")
+	executeCommandLine("/home/emericb/Documents/pulse.sh", "volume_down", "AC:9A:22:72:1A:D4")
+end

@@ -1,0 +1,8 @@
+rule "SENGLED_LUMINOSITY"
+when
+	Item Sengled_Light changed	
+then
+	var value = Sengled_Light.state as Number
+	logInfo("Sengled_Light", " Luminosity = {} ", value)
+	executeCommandLine("/Scripts/pulse.sh", value.toString, "AC:9A:22:72:1A:D4")
+end
