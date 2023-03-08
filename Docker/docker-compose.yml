@@ -5,7 +5,6 @@ networks:
     ipam:
       config:
         - subnet: 172.25.0.1/28
-          gateway: 172.25.0.1
 services:
   domus-openhab:
     image: openhab/openhab:3.4.1 # Last stable version of openhab available on docker hub
