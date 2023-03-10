@@ -13,7 +13,7 @@ echo "Cloning the repository"
 DIRECTORY=Meross-Domus
 if [ ! -d "$DIRECTORY" ]; then
   echo "Directory doesn't exist"
-  git clone https://github.com/Projet-INFO-S10/Meross-Domus
+  git clone git@github.com:Projet-INFO-S10/Meross-Domus.git
 fi
 
 cd $DIRECTORY/bin
