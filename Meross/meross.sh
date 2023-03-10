@@ -5,12 +5,7 @@ echo "Welcome in the Meross configuration script "
 echo "Certificates generation"
 bash key_generator.sh
 
-echo "Cloning the repositories"
-
-if [ ! -d "appartement" ]; then
-  echo "Cloning the appartement repository with ssh..."
-  git clone git@gricad-gitlab.univ-grenoble-alpes.fr:plateforme-domus/appartement.git
-fi
+echo "Cloning the repository"
 
 DIRECTORY=Meross-Domus
 if [ ! -d "$DIRECTORY" ]; then

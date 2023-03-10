@@ -29,7 +29,7 @@ function generate_client () { # Generate client certificate and key
 }
 
 function move_server_files () { # Move server files to the broker directory
-   mv ca.key ca.crt server.csr server.key $BROKER_OUTDIR
+   mv ca.key ca.crt server.csr server.crt server.key $BROKER_OUTDIR
 }
 
 function move_client_files () { # Move client files to the client directory
