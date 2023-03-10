@@ -10,7 +10,7 @@ docker-compose up -d
 
 echo "Cloning the repository"
 
-DIRECTORY=Meross
+DIRECTORY=Meross-Domus
 if [ ! -d "$DIRECTORY" ]; then
   echo "Directory doesn't exist"
   git clone https://github.com/Projet-INFO-S10/Meross-Domus
