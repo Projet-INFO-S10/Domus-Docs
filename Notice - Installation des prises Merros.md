@@ -2,13 +2,14 @@
 
 Pour cette notice, nous considérons un système d'exploitation Ubuntu.
 
+Attention ! Cette notice ne permet pour l'instant pas l'installation complète de la prise sur OpenHAB ! 
+
 # Clone du repository et configuration
 
-Dans le [repository](https://github.com/Projet-INFO-S10/Domus-docs/tree/main/Docker), sont fournis tout le nécéssaire pour la mise en place d'un environnement containerisé d'un serveur MQTT sécurisé. Il faut donc utiliser les commandes suivantes:
+Dans le [repository](https://github.com/Projet-INFO-S10/Domus-docs/tree/main/Docker), sont fournis tout le nécéssaire pour la mise en place d'un environnement contenerisé d'un serveur MQTT avec communications chiffrées. Il faut donc utiliser les commandes suivantes:
 
     git clone https://github.com/Projet-INFO-S10/Domus-docs
     cd Meross
-
 
 Pour lancer les tout le nécessaire, cela se fait avec la commande suivante:
 
@@ -16,23 +17,14 @@ Pour lancer les tout le nécessaire, cela se fait avec la commande suivante:
 
 Suivre les infos du script.
 
-# Configuration interne à OpenHab
+Ce script va cloner le repository de Domus et notre fork du repository [repository](https://github.com/bytespider/Meross) qui permet la configuration et le contrôle de la prise Meross MSS310.
 
-Une fois que les étapes précendentes ont été effectués, un serveur MQTT sécurisé est mis en place sur 'hôte.
-
-On suppose que le **MQTT bindings** a été installé précédement, sinon voir une des autres notices pour savoir comment faire. 
-
-## Création du .things
-
-
-
-
-## Création du .items
-
+# 
 
 
 ## Génération des certificats
-Utiliser le script accessible à l'adresse [Mettre lien vers script]()
+Il est possible de générer des certificats en utilisant OpenSSL via le script key_generator.sh ce qui permet la communication chiffrée par TLS entre le broker mqtt et les clients.
+Utiliser le script accessible à l'adresse [script](https://github.com/Projet-INFO-S10/Domus-docs/blob/main/Meross/key_generator.sh)
 Pour lancer le script:
     
     ./key_generator.sh
@@ -40,6 +32,9 @@ Pour lancer le script:
 ## Modification des rêgles du pare feu
 
 Pour permettre la communication à travers le pare feu:
+- sudo ufw allow from any to any port 8883 proto tcp
+- sudo ufw allow from any to any port 8884 proto tcp
 
-    sudo ufw allow from any to any port 8883 proto tcp
-    sudo ufw allow from any to any port 8884 proto tcp
+## References
+Le repository github de arandall nous a servi de documentation pour la communication avec les prises Meross (Format des paquets, signature...)
+[repository](https://github.com/arandall/meross/blob/main/doc/protocol.md#appliancesystemall)
