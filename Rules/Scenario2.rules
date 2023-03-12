@@ -1,0 +1,11 @@
+rule "SCENARIO_2"
+when
+	Item ZWave_Node_004_FGMS001_Motion_Sensor_Alarm_general changed	
+then
+	switch (ZWave_Node_004_FGMS001_Motion_Sensor_Alarm_general.state) {
+		case "Alarm": {
+			logInfo("ZWave_Node_004_FGMS001_Motion_Sensor_Alarm_general", "Someone is in the room, light goes on") }
+		default: {
+			logInfo("ZWave_Node_004_FGMS001_Motion_Sensor_Alarm_general", "Nobody is there, light goes off") }
+	}
+end

@@ -1,0 +1,18 @@
+rule "SCENARIO_1"
+when
+	Item ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number changed	
+then
+	switch (ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number.state) {
+		case 1: {
+			logInfo("ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number", "Button 1 has been pressed, opening/closing stores") }
+		case 2: {
+			logInfo("ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number", "Button 2 has been pressed, lightbulb on/off")
+			executeCommandLine("./Scripts/pulse.sh", "on", "AC:9A:22:72:1A:D4") }
+        case 3: {
+			logInfo("ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number", "Button 3 has been pressed, volume goes up")
+			executeCommandLine("./Scripts/pulse.sh", "volume_up", "AC:9A:22:72:1A:D4") }
+        case 4: {
+			logInfo("ZWave_Node_006_ZW130_WallMote_Quad_Scene_Number", "Button 4 has been pressed, volume goes down")
+			executeCommandLine("./Scripts/pulse.sh", "volume_down", "AC:9A:22:72:1A:D4") }
+	}
+end

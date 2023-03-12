@@ -1,0 +1,9 @@
+rule "SCENARIO_3"
+when
+	Item Capteur_Qualite_Air_Interieur_Bruit changed	
+then
+    if (Capteur_Qualite_Air_Interieur_Bruit.state > ?) {
+        logInfo("Capteur_Qualite_Air_Interieur_Bruit", "Noise detected")
+        say("Trop de bruit, arrêtez.")
+    }
+end
