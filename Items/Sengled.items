@@ -1,0 +1,8 @@
+Dimmer Sengled_Light "Sengled Light" <lightbulb>
+
+Switch Sengled_Switch "Sengled Switch" <lightbulb>
+
+Switch Sengled_Volume_Down "Sengled Volume Down" <soundvolume>
+
+Switch Sengled_Volume_Up "Sengled Volume Up" <soundvolume>
+

@@ -1,0 +1,7 @@
+rule "SENGLED_VOLUME_UP"
+when
+	Item Sengled_Volume_Up changed	
+then
+	logInfo("Sengled_Volume_Up", "Sound goes up")
+	executeCommandLine("/home/emericb/Documents/pulse.sh", "volume_up", "AC:9A:22:72:1A:D4")
+end

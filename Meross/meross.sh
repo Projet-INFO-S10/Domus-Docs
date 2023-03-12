@@ -5,16 +5,21 @@ echo "Welcome in the Meross configuration script "
 echo "Certificates generation"
 bash key_generator.sh
 
+echo "Cloning the repositories"
+
+if [ ! -d "appartement" ]; then
+  echo "Cloning the appartement repository with ssh..."
+  git clone git@gricad-gitlab.univ-grenoble-alpes.fr:plateforme-domus/appartement.git
+fi
+
+DIRECTORY=Meross-Domus
+if [ ! -d "$DIRECTORY" ]; then
+  echo "Cloning the Meross-Domus repository..."
+  git clone git@github.com:Projet-INFO-S10/Meross-Domus.git
+fi
+
 echo "Starting MQTT Broker container"
 docker-compose up -d
-
-echo "Cloning the repository"
-
-DIRECTORY=Meross
-if [ ! -d "$DIRECTORY" ]; then
-  echo "Directory doesn't exist"
-  git clone https://github.com/bytespider/Meross
-fi
 
 cd $DIRECTORY/bin
 
