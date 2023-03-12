@@ -1,0 +1,36 @@
+2023-03-07T09:19:35: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:19:35: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:19:35: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:19:35: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:22:39: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:22:39: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:22:39: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:22:39: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:28:04: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:28:04: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:28:04: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:28:04: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:30:46: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:30:46: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:30:46: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:30:46: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:34:49: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:34:49: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:34:49: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:34:49: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:36:20: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:36:21: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:36:21: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:36:21: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:36:58: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:36:58: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:36:58: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:36:58: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:37:01: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:37:01: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:37:01: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:37:01: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib
+2023-03-07T09:39:49: Error: Unable to load CA certificates. Check cafile "/etc/mosquitto/certs/ca.crt".
+2023-03-07T09:39:50: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-03-07T09:39:50: OpenSSL Error[1]: error:2006D080:BIO routines:BIO_new_file:no such file
+2023-03-07T09:39:50: OpenSSL Error[2]: error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib

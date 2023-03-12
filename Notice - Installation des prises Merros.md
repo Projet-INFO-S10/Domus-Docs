@@ -10,7 +10,7 @@ Dans le [repository](https://github.com/Projet-INFO-S10/Domus-docs/tree/main/Doc
     cd Meross
 
 
-Pour lancer les tout le nécessaire, cela se fait avec la commande suivante:
+Pour lancer tout le nécessaire, cela se fait avec la commande suivante:
 
     ./meross.sh
 
