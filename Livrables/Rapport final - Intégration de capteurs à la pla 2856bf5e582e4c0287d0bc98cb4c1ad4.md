@@ -1,8 +1,9 @@
 # Rapport final - Intégration de capteurs à la plaforme Domus
 
 *Projet Semestre 10 - Informatique année 5 - Polytech Grenoble*
-
-<img align="right" src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled.png" width="300"/>
+<div align="center">
+  <img align="right" src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled.png" width="300"/>
+</div>
 
 **Porteurs de projet :** LIG - Sybille CAFFIAU - Mélissa COURLA
 
@@ -43,8 +44,10 @@ Grâce à la richesse des plugins et extensions disponibles, certains appareils 
 
 Z-Wave est un des protocoles de communication sans fil que nous avons utilisé pour brancher certains capteurs qui nous ont été confiés. Cette technologie permet de créer des réseaux maillés qui sont bien adaptés à de la domotique comme notre plateforme. 
 
-<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%201.png" width="500"/>
-
+<div align="center">
+  <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%201.png" width="500"/>
+</div>
+  
 En effet, un produit Z-Wave va transmettre le signal à un autre jusqu'à que la destination finale soit atteinte. Dans notre cas, la destination finale est une clé USB qui sert d’antenne et de relai entre la plateforme openHAB et le réseau Z-Wave. La bande de fréquence sur laquelle opère Z-Wave permet de ne pas empiéter sur celle du wifi et donc aucune interférence n’est à déplorer de ce côté-là. D’un point de vue efficacité énergétique, la technologie est faite de manière à économiser la consommation énergétique et ainsi la consommation. La durée de vie de la batterie s’en retrouve ainsi augmentée. Une autre force de cette technologie est la diversité des capteurs disponibles. Ainsi, nous avons pu en tester plusieurs. Nous avons eu un détecteur d’inondation, un détecteur de mouvement ou encore un interrupteur à 4 touches. Cette diversité de produit permet d’utiliser de nombreux objets Z-Wave qui permettent de renforcer le réseau maillé proposé par la technologie.
 
 ### 2.3 Bluetooth
@@ -57,8 +60,10 @@ La technologie LoRaWAN pour Long Range Wide Area Network est une technologie de 
 
 `Organisation d’un réseau IoT avec LoRaWAN:`
 
-<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%202.png" width="700"/>
 
+<div align="center">
+  <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%202.png" width="700"/>
+</div>
 
 ### 2.5 MQTT
 
