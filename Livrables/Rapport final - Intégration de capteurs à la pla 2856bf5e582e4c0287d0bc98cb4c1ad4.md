@@ -2,7 +2,7 @@
 
 *Projet Semestre 10 - Informatique année 5 - Polytech Grenoble*
 
-![Untitled](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled.png)
+<img align="right" src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled.png" width="300"/>
 
 **Porteurs de projet :** LIG - Sybille CAFFIAU - Mélissa COURLA
 
@@ -43,9 +43,7 @@ Grâce à la richesse des plugins et extensions disponibles, certains appareils 
 
 Z-Wave est un des protocoles de communication sans fil que nous avons utilisé pour brancher certains capteurs qui nous ont été confiés. Cette technologie permet de créer des réseaux maillés qui sont bien adaptés à de la domotique comme notre plateforme. 
 
-![Système domotique Z-Wave avec réseau maillé. - [https://tutoriels.domotique-store.fr/images/Z-Wave/z-wave_avec_routage.png](https://tutoriels.domotique-store.fr/images/Z-Wave/z-wave_avec_routage.png)](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%201.png)
-
-Système domotique Z-Wave avec réseau maillé. - [https://tutoriels.domotique-store.fr/images/Z-Wave/z-wave_avec_routage.png](https://tutoriels.domotique-store.fr/images/Z-Wave/z-wave_avec_routage.png)
+<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%201.png" width="500"/>
 
 En effet, un produit Z-Wave va transmettre le signal à un autre jusqu'à que la destination finale soit atteinte. Dans notre cas, la destination finale est une clé USB qui sert d’antenne et de relai entre la plateforme openHAB et le réseau Z-Wave. La bande de fréquence sur laquelle opère Z-Wave permet de ne pas empiéter sur celle du wifi et donc aucune interférence n’est à déplorer de ce côté-là. D’un point de vue efficacité énergétique, la technologie est faite de manière à économiser la consommation énergétique et ainsi la consommation. La durée de vie de la batterie s’en retrouve ainsi augmentée. Une autre force de cette technologie est la diversité des capteurs disponibles. Ainsi, nous avons pu en tester plusieurs. Nous avons eu un détecteur d’inondation, un détecteur de mouvement ou encore un interrupteur à 4 touches. Cette diversité de produit permet d’utiliser de nombreux objets Z-Wave qui permettent de renforcer le réseau maillé proposé par la technologie.
 
@@ -57,9 +55,10 @@ La technologie Bluetooth est une technologie de communication sans fil qui perme
 
 La technologie LoRaWAN pour Long Range Wide Area Network est une technologie de réseau sans fil conçue pour l'Internet des objets (IoT). La conception de cette technologie d’être très économe en énergie tout en permettant une communication longue distance. LoRaWAN s’appuie sur une modulation de fréquence avec étalement de spectre adaptable pour offrir le meilleur débit. La distance de communication peut s’étaler sur plusieurs kilomètres, dans des conditions optimales, cela peut représenter plusieurs dizaines de kilomètres. Dans un usage urbain avec des obstacles, la portée pourra se retrouver réduite. Ce genre de capteur est idéal pour des capteurs de monitoring qui doivent périodiquement envoyer des données. Dans notre cas, nous avions eu un capteur de porte qui fonctionnait à l’aide de la technologie LoRaWAN. Pour le fonctionnement du capteur, lorsqu’il reçoit un signal de mouvement de porte, il envoie le signal tout autour de lui. Une ou plusieurs passerelles reçoivent le signal et le transmettent au réseau de serveurs, puis après d’éventuels traitements, il sera envoyé au bon endroit.
 
-![Organisation d’un réseau IoT avec LoRaWAN](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%202.png)
+Organisation d’un réseau IoT avec LoRaWAN:
 
-Organisation d’un réseau IoT avec LoRaWAN
+<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%202.png" width="700"/>
+
 
 ### 2.5 MQTT
 
@@ -81,11 +80,14 @@ L'architecture distribuée d'openHAB permet de créer un système domotique évo
 
 ### 3.2 Docker
 
-Afin de permettre une meilleure portabilité de la plateforme openHAB, il a été décidé en partenariat avec les porteurs de projet de conteneuriser l’application existante. Pour cela, nous avons créé le script bash [dockerize.sh](http://dockerize.sh/) et le fichier docker-compose.yml. Ces fichiers permettent de cloner le repository gitlab de Domus pour récupérer les fichiers de configuration openHAB (.things et .items), créer le conteneur via l’image officielle d’openHAB disponible sur Dockerhub.
+Afin de permettre une meilleure portabilité de la plateforme openHAB, il a été décidé en partenariat avec les porteurs de projet de conteneuriser l’application existante. Pour cela, nous avons créé le script bash dockerize.sh et le fichier docker-compose.yml. Ces fichiers permettent de cloner le repository gitlab de Domus pour récupérer les fichiers de configuration openHAB (.things et .items), créer le conteneur via l’image officielle d’openHAB disponible sur Dockerhub.
 
-Pour cela, nous avons créé le script bash [dockerize.sh](http://dockerize.sh/) et le fichier docker-compose.yml. Ces fichiers permettent de cloner le repository gitlab de Domus pour récupérer les fichiers de configuration openHAB (.things et .items). Le script permet ensuite de créer le conteneur via l’image officielle d’openHAB disponible sur Dockerhub.
+Pour cela, nous avons créé le script bash dockerize.sh et le fichier docker-compose.yml. Ces fichiers permettent de cloner le repository gitlab de Domus pour récupérer les fichiers de configuration openHAB (.things et .items). Le script permet ensuite de créer le conteneur via l’image officielle d’openHAB disponible sur Dockerhub.
 
-![Architecture.jpg](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Architecture.jpg)
+Architecture :
+
+<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Architecture.jpg" width="700"/>
+
 
 ## 4. Réalisation technique
 
@@ -103,9 +105,9 @@ Cependant, pour faire la liaison entre CampusIoT et openHAB, nous avons eu besoi
 
 De ce fait, lorsque la connexion est créée, on peut maintenant ajouter un “topic”, qui dans notre cas représente le capteur pour lequel on veut obtenir les données. OpenHAB permet de créer des objets génériques MQTT qui récupèrent des données. Ceux-ci peuvent avoir des “channels”, outils utilisés pour récupérer chaque élément que l’on veut avoir. Dans notre cas, l’objet générique est le capteur de porte, lié au Broker précédemment créé pour la liaison avec campusIoT. Les channels permettent d’obtenir le nombre d’ouvertures de la porte, son état actuel ou bien encore la date du dernier mouvement. Toutes ces informations sont utiles pour ce capteur.
 
-![Capteur de porte Dragino LDS02](https://media.elektor.com/media/catalog/product/cache/9cc822bfc6a57f9729d464b8b5e0e0df/d/r/dragino_lds02_-_top_view.jpeg)
+Capteur de porte Dragino LDS02 :
 
-Capteur de porte Dragino LDS02
+<img src="https://media.elektor.com/media/catalog/product/cache/9cc822bfc6a57f9729d464b8b5e0e0df/d/r/dragino_lds02_-_top_view.jpeg" width="200"/>
 
 ### Capteur de qualité de l’air Netatmo
 
@@ -117,9 +119,9 @@ Il est également nécessaire de créer une application sur le site développeur
 
 Avec toutes ces informations, le capteur est maintenant disponible sur openHAB et peut transmettre les informations que l’on souhaite, en créant des channels qui font la liaison avec chaque information du capteur, pour ne garder que les données que l’on souhaite. Cela se fait facilement sous l’interface utilisateur d’openHAB.
 
-![Capteur de qualité de l’air Netatmo](https://www.cosmoselectro.ma/storage/sliders/netatmo-air.PNG)
+Capteur de qualité de l’air Netatmo :
 
-Capteur de qualité de l’air Netatmo
+<img src="https://www.cosmoselectro.ma/storage/sliders/netatmo-air.PNG" width="200"/>
 
 ### Capteurs Z-Wave
 
@@ -133,21 +135,23 @@ Lorsque ceci est fait, il faut maintenant appareiller tous les capteurs à la cl
 
 Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capteur qui vérifie si la pièce est inondée, le Motion Sensor, un capteur qui vérifie les mouvements dans la pièce, le Metered Wall Plug, une prise permettant de vérifier la consommation électrique de l’appareil branché, le Wallmote Quad, un capteur avec quatre touches sur lequel on peut définir des actions dans la maison, et enfin un bouton qui n’était pas fonctionnel.
 
-![Flood Sensor](https://smart-itc.de/wp-content/uploads/2019/12/fibaro-flood-sensor-z-wave.jpg)
+Flood sensor :
 
-Flood Sensor
+<img src="https://smart-itc.de/wp-content/uploads/2019/12/fibaro-flood-sensor-z-wave.jpg" width="200"/>
 
-![Motion Sensor](https://cdn.shopify.com/s/files/1/0218/7704/products/fibaro-fgms_001-z_wave-plus-motion-sensor-profile_2780a3c6-15f8-4f7f-b381-a8f17ecd93a2_1024x1024.jpg?v=1508323658)
+Motion Sensor :
 
-Motion Sensor
+<img src="https://cdn.shopify.com/s/files/1/0218/7704/products/fibaro-fgms_001-z_wave-plus-motion-sensor-profile_2780a3c6-15f8-4f7f-b381-a8f17ecd93a2_1024x1024.jpg?v=1508323658" width="200"/>
 
-![Metered Wall Plug Switch](https://cdn.alarme-maison-sans-fil.fr/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/f/g/fgwpe-102_zw5_eu_1_.jpg)
 
-Metered Wall Plug Switch
+Metered Wall Plug Switch :
 
-![Wallmote Quad](https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679)
+<img src="https://cdn.alarme-maison-sans-fil.fr/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/f/g/fgwpe-102_zw5_eu_1_.jpg" width="200"/>
 
-Wallmote Quad
+Wallmote Quad :
+
+<img src="https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679" width="200"/>
+
 
 ### Ampoule haut-parleur Sengled
 
@@ -157,9 +161,10 @@ Ces ampoules servent à faire de la lumière, mais également en tant que haut-p
 
 Par la suite, nous avons trouvé un autre moyen de créer de l’interaction entre openHAB et l’ampoule connectée. En effet, il existe sur un openHAB un principe de rules, c’est à dire des actions qui s’effectuent lorsque quelque chose arrive à un élément (une activation, un changement de valeur, etc…). En créant des items directement sur le serveur, il est possible d’effectuer des rules qui s’active lors du changement de valeur manuellement pour ces items, ce qui permet en conséquence l’exécution de scripts. Dans ces scripts, nous avons eu la possibilité d’envoyer des valeurs hexadécimales, permettant de modifier la luminosité et le volume de l’ampoule, ce qui a résolu notre problème.
 
-![Ampoule haut-parleur Sengled](https://www.coquediscount.com/46572-large_default/ampoule-solo-sengled-avec-haut-parleur-integre.jpg)
+Ampoule haut-parleur Sengled :
 
-Ampoule haut-parleur Sengled
+<img src="https://www.coquediscount.com/46572-large_default/ampoule-solo-sengled-avec-haut-parleur-integre.jpg" width="200"/>
+
 
 ### Prise WiFi Meross
 
@@ -170,8 +175,8 @@ La prise se connecte par défaut au serveur de Meross à l’adresse : [https:/
 En reliant openHAB au broker mqtt, nous avons pu recevoir les données renvoyées par la prise. Cependant, lorsque nous publiions un paquet sur le topic prévu à cet effet, la prise ne changeait pas d’état ou ne renvoyait pas de données. Ceci rendait alors impossible l’intégration de la prise dans openHAB malgré l’utilisation du binding mqtt.
 
 Afin de pouvoir malgré tout contrôler la prise, nous avons développé un programme javascript a partir du repository github bytespider/Meross qui envoie les paquets via http à la prise WiFi. Par manque de temps, nous n’avons pas réussi à implémenter cela dans openHAB mais il semble possible d’utiliser le binding http de openHAB combiné à notre script pour pouvoir contrôler la prise via openHAB.
-
-![4171eab1-smart-wi-fi-plug-mss310__450_400.jpg](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/4171eab1-smart-wi-fi-plug-mss310__450_400.jpg)
+  
+ <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/4171eab1-smart-wi-fi-plug-mss310__450_400.jpg" width="200"/>
 
 ## 5. Gestion de projet
 
@@ -200,15 +205,17 @@ Pour la gestion de projet, nous avons utilisé l’outil Notion. Celui-ci nous p
 
 Dans notre cas, nous avions plusieurs capteurs à installer, fournis au fur et à mesure des réunions avec le client.  
 
-![Untitled](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%203.png)
+<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%203.png" width="700"/>
 
-![Ici, nous avons le Kanban correspondant aux tâches de l’installation de la lampe haut-parleur.](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%204.png)
+Ici, nous avons le Kanban correspondant aux tâches de l’installation de la lampe haut-parleur :
+  
+  <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%204.png" width="700"/>
 
-Ici, nous avons le Kanban correspondant aux tâches de l’installation de la lampe haut-parleur.
 
 ### 5.2 Gestion des risques
+  
+   <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%205.png" width="700"/>
 
-![Untitled](Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%205.png)
 
 ### 5.3 Rôle des membres
 
