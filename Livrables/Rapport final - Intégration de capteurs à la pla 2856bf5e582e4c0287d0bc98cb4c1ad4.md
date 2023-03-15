@@ -141,25 +141,24 @@ Depuis ce serveur openHAB, nous étions donc en mesure de lire les données du p
 Lorsque ceci est fait, il faut maintenant appareiller tous les capteurs à la clé USB, pour qu’ils soient en mesure d’envoyer des données sur celle-ci. Chaque capteur a sa propre méthode, et nous avons donc cherché la documentation pour les ajouter. Par la suite, de la même manière que pour la clé, nous avons attendu que le serveur openHAB “découvre” les capteurs, pour pouvoir les ajouter sur le serveur et établir la connexion pour la récupération des données souhaitées.
 
 Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capteur qui vérifie si la pièce est inondée, le Motion Sensor, un capteur qui vérifie les mouvements dans la pièce, le Metered Wall Plug, une prise permettant de vérifier la consommation électrique de l’appareil branché, le Wallmote Quad, un capteur avec quatre touches sur lequel on peut définir des actions dans la maison, et enfin un bouton qui n’était pas fonctionnel.
-<div align="justify">
+
 `Flood sensor :`
-
-<img src="https://smart-itc.de/wp-content/uploads/2019/12/fibaro-flood-sensor-z-wave.jpg" width="200"/>
-
+<div align="center">
+  <img src="https://smart-itc.de/wp-content/uploads/2019/12/fibaro-flood-sensor-z-wave.jpg" width="200"/>
+</div>
 `Motion Sensor :`
-
-<img src="https://cdn.shopify.com/s/files/1/0218/7704/products/fibaro-fgms_001-z_wave-plus-motion-sensor-profile_2780a3c6-15f8-4f7f-b381-a8f17ecd93a2_1024x1024.jpg?v=1508323658" width="200"/>
-
-
-`Metered Wall Plug Switch :`
-
-<img src="https://cdn.alarme-maison-sans-fil.fr/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/f/g/fgwpe-102_zw5_eu_1_.jpg" width="200"/>
-
-`Wallmote Quad :`
-
-<img src="https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679" width="200"/>
+<div align="center">
+  <img src="https://cdn.shopify.com/s/files/1/0218/7704/products/fibaro-fgms_001-z_wave-plus-motion-sensor-profile_2780a3c6-15f8-4f7f-b381-a8f17ecd93a2_1024x1024.jpg?v=1508323658" width="200"/>
 </div>
 
+`Metered Wall Plug Switch :`
+<div align="center">
+  <img src="https://cdn.alarme-maison-sans-fil.fr/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/f/g/fgwpe-102_zw5_eu_1_.jpg" width="200"/>
+</div>
+`Wallmote Quad :`
+<div align="center">
+  <img src="https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679" width="200"/>
+</div>
 ### Ampoule haut-parleur Sengled
 
 Après avoir terminé l’installation des capteurs précédents et avoir vérifié qu’ils étaient fonctionnels au laboratoire Domus, nous nous sommes concentrés sur les ampoules haut-parleur de Sengled. Cependant, comme c’était le cas pour les capteurs Z-Wave, l’interaction entre les deux sur un openHAB dockerisé est infaisable, puisqu’il est impossible d’accéder à la connexion Bluetooth d’un ordinateur depuis Docker, d’après nos recherches et des forums spécialisés. Une fois de plus, nous avons donc dû travailler sur un serveur openHAB sur un environnement Linux. En utilisant le principe de découverte, il est alors possible de non seulement reconnaître l’ordinateur, qui sert de Bridge pour la connexion Bluetooth, mais également les ampoules. 
