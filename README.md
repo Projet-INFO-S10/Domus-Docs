@@ -1,4 +1,10 @@
 # Intégration LoRaWAN à la plateforme Domus
+
+Porteurs et encadrants (Prénom, Nom, Institution, Adresse email)
+
+    Sybille Caffiau, UGA/LIG, sybille.caffiau AT univ-grenoble-alpes DOT fr
+    Melissa Courla, UGA, melissa.courla AT univ-grenoble-alpes DOT fr
+
 ## Description du contexte
 
 Le LIG dispose d’un espace équipé de capteur pour la réalisation d’étude (https://www.liglab.fr/fr/recherche/plateformes/domus). Les capteurs (ex : capteurs de CO2, de température) et effecteurs (ex : prises connectées, lumières) présents dans cet espace permettent soit de simuler de l’activité (pour étudier le comportement humain), soit d’obtenir des traces d’activité dans un environnement.
