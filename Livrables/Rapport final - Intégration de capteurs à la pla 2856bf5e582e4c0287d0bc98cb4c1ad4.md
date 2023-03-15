@@ -141,7 +141,7 @@ Depuis ce serveur openHAB, nous étions donc en mesure de lire les données du p
 Lorsque ceci est fait, il faut maintenant appareiller tous les capteurs à la clé USB, pour qu’ils soient en mesure d’envoyer des données sur celle-ci. Chaque capteur a sa propre méthode, et nous avons donc cherché la documentation pour les ajouter. Par la suite, de la même manière que pour la clé, nous avons attendu que le serveur openHAB “découvre” les capteurs, pour pouvoir les ajouter sur le serveur et établir la connexion pour la récupération des données souhaitées.
 
 Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capteur qui vérifie si la pièce est inondée, le Motion Sensor, un capteur qui vérifie les mouvements dans la pièce, le Metered Wall Plug, une prise permettant de vérifier la consommation électrique de l’appareil branché, le Wallmote Quad, un capteur avec quatre touches sur lequel on peut définir des actions dans la maison, et enfin un bouton qui n’était pas fonctionnel.
-
+<div align="justify">
 `Flood sensor :`
 
 <img src="https://smart-itc.de/wp-content/uploads/2019/12/fibaro-flood-sensor-z-wave.jpg" width="200"/>
@@ -158,7 +158,7 @@ Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capte
 `Wallmote Quad :`
 
 <img src="https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679" width="200"/>
-
+</div>
 
 ### Ampoule haut-parleur Sengled
 
