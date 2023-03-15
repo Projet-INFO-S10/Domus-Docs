@@ -55,7 +55,7 @@ La technologie Bluetooth est une technologie de communication sans fil qui perme
 
 La technologie LoRaWAN pour Long Range Wide Area Network est une technologie de réseau sans fil conçue pour l'Internet des objets (IoT). La conception de cette technologie d’être très économe en énergie tout en permettant une communication longue distance. LoRaWAN s’appuie sur une modulation de fréquence avec étalement de spectre adaptable pour offrir le meilleur débit. La distance de communication peut s’étaler sur plusieurs kilomètres, dans des conditions optimales, cela peut représenter plusieurs dizaines de kilomètres. Dans un usage urbain avec des obstacles, la portée pourra se retrouver réduite. Ce genre de capteur est idéal pour des capteurs de monitoring qui doivent périodiquement envoyer des données. Dans notre cas, nous avions eu un capteur de porte qui fonctionnait à l’aide de la technologie LoRaWAN. Pour le fonctionnement du capteur, lorsqu’il reçoit un signal de mouvement de porte, il envoie le signal tout autour de lui. Une ou plusieurs passerelles reçoivent le signal et le transmettent au réseau de serveurs, puis après d’éventuels traitements, il sera envoyé au bon endroit.
 
-Organisation d’un réseau IoT avec LoRaWAN:
+`Organisation d’un réseau IoT avec LoRaWAN:`
 
 <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%202.png" width="700"/>
 
@@ -84,7 +84,7 @@ Afin de permettre une meilleure portabilité de la plateforme openHAB, il a ét�
 
 Pour cela, nous avons créé le script bash dockerize.sh et le fichier docker-compose.yml. Ces fichiers permettent de cloner le repository gitlab de Domus pour récupérer les fichiers de configuration openHAB (.things et .items). Le script permet ensuite de créer le conteneur via l’image officielle d’openHAB disponible sur Dockerhub.
 
-Architecture :
+`Architecture :`
 
 <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Architecture.jpg" width="700"/>
 
@@ -105,7 +105,7 @@ Cependant, pour faire la liaison entre CampusIoT et openHAB, nous avons eu besoi
 
 De ce fait, lorsque la connexion est créée, on peut maintenant ajouter un “topic”, qui dans notre cas représente le capteur pour lequel on veut obtenir les données. OpenHAB permet de créer des objets génériques MQTT qui récupèrent des données. Ceux-ci peuvent avoir des “channels”, outils utilisés pour récupérer chaque élément que l’on veut avoir. Dans notre cas, l’objet générique est le capteur de porte, lié au Broker précédemment créé pour la liaison avec campusIoT. Les channels permettent d’obtenir le nombre d’ouvertures de la porte, son état actuel ou bien encore la date du dernier mouvement. Toutes ces informations sont utiles pour ce capteur.
 
-Capteur de porte Dragino LDS02 :
+`Capteur de porte Dragino LDS02 :`
 
 <img src="https://media.elektor.com/media/catalog/product/cache/9cc822bfc6a57f9729d464b8b5e0e0df/d/r/dragino_lds02_-_top_view.jpeg" width="200"/>
 
@@ -119,7 +119,7 @@ Il est également nécessaire de créer une application sur le site développeur
 
 Avec toutes ces informations, le capteur est maintenant disponible sur openHAB et peut transmettre les informations que l’on souhaite, en créant des channels qui font la liaison avec chaque information du capteur, pour ne garder que les données que l’on souhaite. Cela se fait facilement sous l’interface utilisateur d’openHAB.
 
-Capteur de qualité de l’air Netatmo :
+`Capteur de qualité de l’air Netatmo :`
 
 <img src="https://www.cosmoselectro.ma/storage/sliders/netatmo-air.PNG" width="200"/>
 
@@ -135,20 +135,20 @@ Lorsque ceci est fait, il faut maintenant appareiller tous les capteurs à la cl
 
 Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capteur qui vérifie si la pièce est inondée, le Motion Sensor, un capteur qui vérifie les mouvements dans la pièce, le Metered Wall Plug, une prise permettant de vérifier la consommation électrique de l’appareil branché, le Wallmote Quad, un capteur avec quatre touches sur lequel on peut définir des actions dans la maison, et enfin un bouton qui n’était pas fonctionnel.
 
-Flood sensor :
+`Flood sensor :`
 
 <img src="https://smart-itc.de/wp-content/uploads/2019/12/fibaro-flood-sensor-z-wave.jpg" width="200"/>
 
-Motion Sensor :
+`Motion Sensor :`
 
 <img src="https://cdn.shopify.com/s/files/1/0218/7704/products/fibaro-fgms_001-z_wave-plus-motion-sensor-profile_2780a3c6-15f8-4f7f-b381-a8f17ecd93a2_1024x1024.jpg?v=1508323658" width="200"/>
 
 
-Metered Wall Plug Switch :
+`Metered Wall Plug Switch :`
 
 <img src="https://cdn.alarme-maison-sans-fil.fr/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/f/g/fgwpe-102_zw5_eu_1_.jpg" width="200"/>
 
-Wallmote Quad :
+`Wallmote Quad :`
 
 <img src="https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679" width="200"/>
 
@@ -161,7 +161,7 @@ Ces ampoules servent à faire de la lumière, mais également en tant que haut-p
 
 Par la suite, nous avons trouvé un autre moyen de créer de l’interaction entre openHAB et l’ampoule connectée. En effet, il existe sur un openHAB un principe de rules, c’est à dire des actions qui s’effectuent lorsque quelque chose arrive à un élément (une activation, un changement de valeur, etc…). En créant des items directement sur le serveur, il est possible d’effectuer des rules qui s’active lors du changement de valeur manuellement pour ces items, ce qui permet en conséquence l’exécution de scripts. Dans ces scripts, nous avons eu la possibilité d’envoyer des valeurs hexadécimales, permettant de modifier la luminosité et le volume de l’ampoule, ce qui a résolu notre problème.
 
-Ampoule haut-parleur Sengled :
+`Ampoule haut-parleur Sengled :`
 
 <img src="https://www.coquediscount.com/46572-large_default/ampoule-solo-sengled-avec-haut-parleur-integre.jpg" width="200"/>
 
