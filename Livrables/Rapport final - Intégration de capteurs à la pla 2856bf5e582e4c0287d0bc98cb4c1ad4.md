@@ -224,12 +224,12 @@ Ici, nous avons le Kanban correspondant aux tâches de l’installation de la la
   <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%204.png" width="700"/>
 </div>
 
-### 5.2 Gestion des risques
+### 5.3 Gestion des risques
 <div align="center">
    <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%205.png" width="700"/>
 </div>
 
-### 5.3 Rôle des membres
+### 5.4 Rôle des membres
 
 Comme évoqué plus haut, le projet ne se prêtait pas vraiment à une répartition stricte du travail et une bonne partie des tâches ont été effectuées de manière collaborative.
 
@@ -241,6 +241,12 @@ La répartition est donc la suivant :
 - Cyprien Pelisse-Verdoux : SCRUM Master / Développeur
 
 L’ensemble des développeurs ont participé à l’ensemble des étapes nécessaires à l’installation des capteurs (lecture de documentation, rédaction de notice, installation). La gestion de projet a consisté en la répartition des tâches, l’élaboration du planning et la communication avec le client sur les besoins et l’avancée du travail.
+  
+### 5.5 Coût du projet
+  
+<div align="center">
+  <img src="Rapport%20final%20-%20Intégration%20de%20capteurs%20à%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Screenshot%20from%202023-03-15%2013-29-31.png" width="700"/>
+</div>
 
 ## 6. Outils
 
@@ -252,19 +258,18 @@ Notre projet n’était pas un projet de développement, les seules parties de d
 
 Nombre de fichiers créés :
 
-- 3 fichiers .things contenant environ 20 lignes de code chacun
-- 3 fichiers .items contenant environ 25 lignes de code chacun
-- 7 fichiers .rules contenant environ 15 lignes de code chacun
-- 6 notices d’installation
-- 3 scripts pour Meross contenant environ 50 lignes de code chacun
+- Markdown : 494 lignes (6 notices d'utilisation)
+- JavaScript : 751 lignes (Scripts pour les prises Meross)
+- Bash : 179 lignes (Automatisation)
+- YAML : 95 lignes (Fichier Docker)
 
-### 7.2 Répartition des lignes de code et des commits
+### 7.1 Répartition des lignes de code et des commits
 
-Le total de lignes que nous avons produits dans le cadre de ce projet est donc d’environ 390 lignes, sans compter les notices d’utilisation. Ce total est très faible compte tenu du sujet, cependant nous avons dû faire de nombreuses recherches afin de faire fonctionner chaque capteur, et une grande partie de notre travail se faisait directement via l’interface utilisateur d’openHAB ou via les capteurs, ce qui représentait une charge de travail non visible dans les lignes de code.
+Le total de lignes que nous avons produits dans le cadre de ce projet est donc d’environ 1519 lignes, en comptant les notices d'utilisation. Ce total est très faible compte tenu du sujet, cependant nous avons dû faire de nombreuses recherches afin de faire fonctionner chaque capteur, et une grande partie de notre travail se faisait directement via l’interface utilisateur d’openHAB ou via les capteurs, ce qui représentait une charge de travail non visible dans les lignes de code.
 
 En ce qui concerne le nombre de commits, celui-ci est encore une fois assez peu représentatif de la répartition du travail au sein du groupe. En effet, comme nous n’avions pas énormément de capteurs à traiter en même temps, nous étions amenés à travailler en duo ou même en groupe complet, ce qui peut expliquer pourquoi les commits étaient majoritairement faits par certaines personnes. De plus, nous avions besoin d’utiliser certaines technologies (telles que Z-Wave ou le Bluetooth) sur un openHAB Linux plutôt que sur un openHAB dockerisé (afin d’avoir une configuration semblable à celle de Domus), ce qui n’était possible que sur un seul ordinateur dans le groupe, d’où notre travail commun.
 
-### 7.3 Langages
+### 7.2 Langages
 
 La syntaxe utilisée est propre à openHAB, nous avons donc du créer ces fichiers en s’adaptant à la syntaxe précisée dans les documentations openHAB suivantes :
 
@@ -272,7 +277,7 @@ La syntaxe utilisée est propre à openHAB, nous avons donc du créer ces fichie
 
 [Things](https://www.openhab.org/docs/configuration/things.html)
 
-### 7.4 Temps ingénieur
+### 7.3 Temps ingénieur
 
 En moyenne, nous avons estimé un travail hebdomadaire en moyenne d’une durée de 30h/ semaine. 
 
