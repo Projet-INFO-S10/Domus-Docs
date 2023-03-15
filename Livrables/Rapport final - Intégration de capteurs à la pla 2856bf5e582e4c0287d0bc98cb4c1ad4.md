@@ -130,6 +130,7 @@ Avec toutes ces informations, le capteur est maintenant disponible sur openHAB e
 <div align="center">
   <img src="https://www.cosmoselectro.ma/storage/sliders/netatmo-air.PNG" width="200"/>
 </div>
+
 ### Capteurs Z-Wave
 
 Nous avons également eu d’autres capteurs, basées sur la technologie Z-Wave (présentée dans une partie précédente), qui nous ont été fournis pour notre projet. À l’instar des précédents capteurs, ceux-ci se basaient également sur une technologie directement liable à openHAB, ce qui nous a facilité la tâche. En effet, il existe un binding Z-Wave permettant de connecter non seulement les capteurs, mais également le Bridge par principe de découverte.
@@ -161,6 +162,7 @@ Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capte
 <div align="center">
   <img src="https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679" width="200"/>
 </div>
+
 ### Ampoule haut-parleur Sengled
 
 Après avoir terminé l’installation des capteurs précédents et avoir vérifié qu’ils étaient fonctionnels au laboratoire Domus, nous nous sommes concentrés sur les ampoules haut-parleur de Sengled. Cependant, comme c’était le cas pour les capteurs Z-Wave, l’interaction entre les deux sur un openHAB dockerisé est infaisable, puisqu’il est impossible d’accéder à la connexion Bluetooth d’un ordinateur depuis Docker, d’après nos recherches et des forums spécialisés. Une fois de plus, nous avons donc dû travailler sur un serveur openHAB sur un environnement Linux. En utilisant le principe de découverte, il est alors possible de non seulement reconnaître l’ordinateur, qui sert de Bridge pour la connexion Bluetooth, mais également les ampoules. 
@@ -187,6 +189,7 @@ Afin de pouvoir malgré tout contrôler la prise, nous avons développé un prog
 <div align="center">
  <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/4171eab1-smart-wi-fi-plug-mss310__450_400.jpg" width="200"/>
 </div>
+
 ## 5. Gestion de projet
 
 ### 5.1 Méthode
