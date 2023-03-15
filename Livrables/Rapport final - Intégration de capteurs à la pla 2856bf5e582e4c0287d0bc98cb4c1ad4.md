@@ -90,9 +90,9 @@ Afin de permettre une meilleure portabilité de la plateforme openHAB, il a ét�
 Pour cela, nous avons créé le script bash dockerize.sh et le fichier docker-compose.yml. Ces fichiers permettent de cloner le repository gitlab de Domus pour récupérer les fichiers de configuration openHAB (.things et .items). Le script permet ensuite de créer le conteneur via l’image officielle d’openHAB disponible sur Dockerhub.
 
 `Architecture :`
-
-<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Architecture.jpg" width="700"/>
-
+<div align="center">
+  <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Architecture.jpg" width="700"/>
+</div>
 
 ## 4. Réalisation technique
 
@@ -111,9 +111,10 @@ Cependant, pour faire la liaison entre CampusIoT et openHAB, nous avons eu besoi
 De ce fait, lorsque la connexion est créée, on peut maintenant ajouter un “topic”, qui dans notre cas représente le capteur pour lequel on veut obtenir les données. OpenHAB permet de créer des objets génériques MQTT qui récupèrent des données. Ceux-ci peuvent avoir des “channels”, outils utilisés pour récupérer chaque élément que l’on veut avoir. Dans notre cas, l’objet générique est le capteur de porte, lié au Broker précédemment créé pour la liaison avec campusIoT. Les channels permettent d’obtenir le nombre d’ouvertures de la porte, son état actuel ou bien encore la date du dernier mouvement. Toutes ces informations sont utiles pour ce capteur.
 
 `Capteur de porte Dragino LDS02 :`
-
-<img src="https://media.elektor.com/media/catalog/product/cache/9cc822bfc6a57f9729d464b8b5e0e0df/d/r/dragino_lds02_-_top_view.jpeg" width="200"/>
-
+<div align="center">
+  <img src="https://media.elektor.com/media/catalog/product/cache/9cc822bfc6a57f9729d464b8b5e0e0df/d/r/dragino_lds02_-_top_view.jpeg" width="200"/>
+</div>
+  
 ### Capteur de qualité de l’air Netatmo
 
 Par la suite, nous avons eu à notre disposition un capteur de qualité de l’air Netatmo. Celui-ci a pour but de vérifier différents facteurs tels que le bruit ambiant, la température ou encore l’humidité dans la pièce.
@@ -126,8 +127,9 @@ Avec toutes ces informations, le capteur est maintenant disponible sur openHAB e
 
 `Capteur de qualité de l’air Netatmo :`
 
-<img src="https://www.cosmoselectro.ma/storage/sliders/netatmo-air.PNG" width="200"/>
-
+<div align="center">
+  <img src="https://www.cosmoselectro.ma/storage/sliders/netatmo-air.PNG" width="200"/>
+</div>
 ### Capteurs Z-Wave
 
 Nous avons également eu d’autres capteurs, basées sur la technologie Z-Wave (présentée dans une partie précédente), qui nous ont été fournis pour notre projet. À l’instar des précédents capteurs, ceux-ci se basaient également sur une technologie directement liable à openHAB, ce qui nous a facilité la tâche. En effet, il existe un binding Z-Wave permettant de connecter non seulement les capteurs, mais également le Bridge par principe de découverte.
@@ -167,9 +169,9 @@ Ces ampoules servent à faire de la lumière, mais également en tant que haut-p
 Par la suite, nous avons trouvé un autre moyen de créer de l’interaction entre openHAB et l’ampoule connectée. En effet, il existe sur un openHAB un principe de rules, c’est à dire des actions qui s’effectuent lorsque quelque chose arrive à un élément (une activation, un changement de valeur, etc…). En créant des items directement sur le serveur, il est possible d’effectuer des rules qui s’active lors du changement de valeur manuellement pour ces items, ce qui permet en conséquence l’exécution de scripts. Dans ces scripts, nous avons eu la possibilité d’envoyer des valeurs hexadécimales, permettant de modifier la luminosité et le volume de l’ampoule, ce qui a résolu notre problème.
 
 `Ampoule haut-parleur Sengled :`
-
-<img src="https://www.coquediscount.com/46572-large_default/ampoule-solo-sengled-avec-haut-parleur-integre.jpg" width="200"/>
-
+<div align="center">
+  <img src="https://www.coquediscount.com/46572-large_default/ampoule-solo-sengled-avec-haut-parleur-integre.jpg" width="200"/>
+</div>
 
 ### Prise WiFi Meross
 
@@ -180,9 +182,10 @@ La prise se connecte par défaut au serveur de Meross à l’adresse : [https:/
 En reliant openHAB au broker mqtt, nous avons pu recevoir les données renvoyées par la prise. Cependant, lorsque nous publiions un paquet sur le topic prévu à cet effet, la prise ne changeait pas d’état ou ne renvoyait pas de données. Ceci rendait alors impossible l’intégration de la prise dans openHAB malgré l’utilisation du binding mqtt.
 
 Afin de pouvoir malgré tout contrôler la prise, nous avons développé un programme javascript a partir du repository github bytespider/Meross qui envoie les paquets via http à la prise WiFi. Par manque de temps, nous n’avons pas réussi à implémenter cela dans openHAB mais il semble possible d’utiliser le binding http de openHAB combiné à notre script pour pouvoir contrôler la prise via openHAB.
-  
- <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/4171eab1-smart-wi-fi-plug-mss310__450_400.jpg" width="200"/>
 
+<div align="center">
+ <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/4171eab1-smart-wi-fi-plug-mss310__450_400.jpg" width="200"/>
+</div>
 ## 5. Gestion de projet
 
 ### 5.1 Méthode
@@ -209,18 +212,18 @@ Au vu du projet et du fait que nous n’avions pas les capteurs au fur et à mes
 Pour la gestion de projet, nous avons utilisé l’outil Notion. Celui-ci nous permet de créer des tâches que l’on peut attribuer aux différents membres du projet avec différentes dates d’échéance.
 
 Dans notre cas, nous avions plusieurs capteurs à installer, fournis au fur et à mesure des réunions avec le client.  
-
-<img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%203.png" width="700"/>
-
+<div align="center">
+  <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%203.png" width="700"/>
+</div>
 Ici, nous avons le Kanban correspondant aux tâches de l’installation de la lampe haut-parleur :
-  
+<div align="center">
   <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%204.png" width="700"/>
-
+</div>
 
 ### 5.2 Gestion des risques
-  
+<div align="center">
    <img src="Rapport%20final%20-%20Inte%CC%81gration%20de%20capteurs%20a%CC%80%20la%20pla%202856bf5e582e4c0287d0bc98cb4c1ad4/Untitled%205.png" width="700"/>
-
+</div>
 
 ### 5.3 Rôle des membres
 
