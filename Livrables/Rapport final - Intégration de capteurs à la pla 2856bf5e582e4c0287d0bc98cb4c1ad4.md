@@ -146,6 +146,7 @@ Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capte
 <div align="center">
   <img src="https://smart-itc.de/wp-content/uploads/2019/12/fibaro-flood-sensor-z-wave.jpg" width="200"/>
 </div>
+
 `Motion Sensor :`
 <div align="center">
   <img src="https://cdn.shopify.com/s/files/1/0218/7704/products/fibaro-fgms_001-z_wave-plus-motion-sensor-profile_2780a3c6-15f8-4f7f-b381-a8f17ecd93a2_1024x1024.jpg?v=1508323658" width="200"/>
@@ -155,6 +156,7 @@ Les capteurs que nous avons utilisés avec Z-Wave sont le Flood Sensor, un capte
 <div align="center">
   <img src="https://cdn.alarme-maison-sans-fil.fr/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/f/g/fgwpe-102_zw5_eu_1_.jpg" width="200"/>
 </div>
+
 `Wallmote Quad :`
 <div align="center">
   <img src="https://cdn.shopify.com/s/files/1/0066/8149/3559/products/zw130_2_700x700.jpg?v=1569287679" width="200"/>
